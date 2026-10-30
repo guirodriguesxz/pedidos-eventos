@@ -1,4 +1,14 @@
 services:
+  postgres-pedidos:
+    image: postgres:17
+    container_name: postgres-pedidos
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: pedidos
+      POSTGRES_USER: pedidos
+      POSTGRES_PASSWORD: pedidos
+
   kafka:
     image: apache/kafka:3.9.0
     container_name: kafka
