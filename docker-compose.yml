@@ -9,6 +9,16 @@ services:
       POSTGRES_USER: pedidos
       POSTGRES_PASSWORD: pedidos
 
+  postgres-estoque:
+    image: postgres:17
+    container_name: postgres-estoque
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: estoque
+      POSTGRES_USER: estoque
+      POSTGRES_PASSWORD: estoque
+
   kafka:
     image: apache/kafka:3.9.0
     container_name: kafka
