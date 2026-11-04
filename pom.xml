@@ -11,5 +11,6 @@
 	<modules>
 		<module>pedidos</module>
 		<module>estoque</module>
+		<module>pagamento</module>
 	</modules>
 </project>
